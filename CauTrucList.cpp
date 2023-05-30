@@ -44,7 +44,7 @@ void Display (SinhVien sv){
 	cout << setw(8) << sv.ten;
 	cout << setw(7) << sv.gioiTinh;
 	cout << setw(8) << right << sv.namSinh;
-	cout << setw(7) << setprecision(2) << sv.diemTK;
+	cout << setw(7) << setprecision(2) << sv.diemTK << endl;
  }
 
 void Add (Tro &L, SinhVien sv){
@@ -139,8 +139,15 @@ void SapXepChon (Tro &L){
 }
 
 int main(){
-	Tro L, Create (L); TaoDS(L);
-	cout <<"Hien thi danh sach vua tao " << endl ;
+	Tro L;
+	Create (L);
+	TaoDS(L);
+	HTDS (L);
+	cout <<"Danh sach sau khi xoa phan tu dau: " << endl;
+	XoaPhanTuDauTien(L);
 	HTDS(L);
-	return 0; aaaa
+	cout <<"Chen sinh vien vao vi tri thu 3: " << endl;
+	ChenVaoViTriThu3(L);
+	HTDS(L);
+	return 0;
 }
