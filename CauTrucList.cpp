@@ -142,5 +142,5 @@ int main(){
 	Tro L, Create (L); TaoDS(L);
 	cout <<"Hien thi danh sach vua tao " << endl ;
 	HTDS(L);
-	return 0;
+	return 0; aaaa
 }
